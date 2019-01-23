@@ -1,0 +1,35 @@
+Hi JK,
+
+As per today’s call, I have tried below things and results are as follow :
+
+1.	Writing bulk records :
+Which consists Row missing in Target i.e; 1369 rows and 90 columns
+Takes 6 mins (391 secs)
+File Size 3961 kb
+
+Logic for bulk writing :
+Collecting all data mismatch, Row Missing Source, Row Missing Target in 3 different Arraylist
+Opening excel once 
+Writing whole data one by one ArrayList
+Example : 
+Data Mismatch ArrayList
+Row Missing Source ArrayList
+Row Missing Target ArrayList
+Closing the excel at the end .
+
+2.	Writing one by one records :
+Which consists Row missing in Target i.e; 1369 rows and 90 columns
+Takes 5 mins (355 secs)
+File Size 3961 kb
+
+Logic for one by one writing :
+Opening excel once writing data one by one and closing the excel at the end of all.
+
+3.	Writing 1000 Data Mismatch :
+1000 rows 4 columns which consists Primary Key, Column Name, Source Data, Target Data
+It took just 1 minute
+
+Conclusion : If we are writing to excel with 1000 data mismatch,1000 row missing source, 1000 row missing target it will take approx.. 12 – 15 mins with Excelfile size of nearly 7000 KB (Depends on number of Columns).
+
+Thanks
+Sameer
